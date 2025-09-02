@@ -15,6 +15,9 @@ Key Components Involved:
 •	IAM Roles and Policies: Manage permissions and authentication.
 •	S3 Bucket Policy or Resource Policy: Defines who can access the bucket.
 
+<img width="755" height="676" alt="image" src="https://github.com/user-attachments/assets/61f15a90-d9ad-42d1-a38c-525fe7756793" />
+
+
 📌 Benefits of This Setup:-
 ===============================================================================================================================
 ✅ Secure Data Sharing
