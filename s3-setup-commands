@@ -1,0 +1,29 @@
+# Step 1: Configure your AWS CLI
+C:\Users\XXXXXXX>aws configure
+AWS Access Key ID [****************NHXM]: XXXXXXXXXOIN3NXXXXXXX
+AWS Secret Access Key [****************v/v5]: Sz0FEFXXXXXXXXXXXXXXXXXXX
+Default region name [ap-south-1]: ap-south-1
+Default output format [None]:jSON
+
+# Step 2: List the bucket on another account
+C:\Users\XXXXX >aws s3 ls
+2025-08-26 12:29:23 s3-cli-access-limit
+
+# Step 3: Create the bucket
+C:\Users\XXXXXXX>aws s3 mb s3://myunique-13
+make_bucket: myunique-13
+
+# Step 4: Remove the bucket
+C:\Users\XXXXXXXX>aws s3 rb s3://myunique-13
+remove_bucket: myunique-13
+
+# Step 5: Create the bucket and Pull the object in the bucket
+C:\Users\XXXXXXX>aws s3 mb s3://myunique-13
+make_bucket: myunique-13
+
+C:\Users\XXXXXXX>aws s3 cp "D:\data\my.jpg" s3://myunique-13/my.jpg
+upload: D:\data\my.jpg to s3://myunique-13/my.jpg
+
+# Step 6: Download objects 
+C:\Users\XXXXXXX> aws s3 cp s3://s3-cli-access-limit/133990234908834184.jpg 
+download: s3://s3-cli-access-limit/133990234908834184.jpg to .\133990234908834184.jpg
